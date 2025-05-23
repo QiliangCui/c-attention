@@ -1,7 +1,7 @@
 steps:
-  - label: ":python: Run Tests"
-    agents:
-      queue: gcp-cpu
+  - label: ":python: Run Tests"    
     command:
+      - "python3 -m venv venv"
+      - "source venv/bin/activate"
       - "pip install -e .[test]"
       - "pytest tests/"
