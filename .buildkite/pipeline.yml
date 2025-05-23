@@ -1,7 +1,7 @@
 steps:
   - label: ":python: Run Tests"
+    agents:
+      queue: gcp-cpu
     command:
       - "pip install -e .[test]"
       - "pytest tests/"
-    agents:
-      queue: gcp-cpu
