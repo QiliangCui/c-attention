@@ -4,4 +4,4 @@ steps:
       - "pip install -e .[test]"
       - "pytest tests/"
     agents:
-      queue: "gcp-cpu"
+      queue: gcp-cpu
